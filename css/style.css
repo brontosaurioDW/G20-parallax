@@ -1,0 +1,235 @@
+/**
+Site: G20;
+
+*/
+
+/**
+ * Table of Contents
+ * 1.0 - Reset CSS
+ * 2.0 - General
+ 	* 2.1 - Colors & Fonts guide
+ 	* 2.2 - Sections
+ 	* 2.3 - Buttons
+ 	* 2.4 - Backgrounds
+ * 3.0 - 
+ * 4.0 - 
+ * 5.0 - 
+ * 6.0 - 
+ * 7.0 - 
+ * 8.0 - 
+ * 9.0 - 
+ * 10.0 - 
+ * 11.0 - 
+ * 12.0 - 
+ * 12.0 - 
+ * 14.0 - Responsive
+
+ */
+
+
+/* =====================
+   1.0 Reset css
+   ===================== */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	font-family: sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img{
+	max-width: 100%;
+}
+
+
+/* =====================
+    2.0 General
+   ===================== */
+
+/* 2.1 Colors & Fonts guide
+------------------------
+*/
+
+
+/*Color reference
+
+Blue: #20242f;
+Green: #3de9be;
+Light text: #4b586a;
+Lighter text: #8c8f94;
+Gray: 2b2f3a;
+Background gray: #f8fafc;
+
+*/
+
+/*Font reference
+
+font-family: 'source_sans_prosemibold';
+font-family: 'source_sans_proregular';
+font-family: 'source_sans_prolight';
+font-family: 'Montserrat UltraLight';
+font-family: 'Montserrat Light';
+font-family: 'Montserrat Regular';
+font-family: 'Montserrat SemiBold';
+font-family: 'Montserrat Bold';
+font-family: 'Montserrat ExtraBold';
+font-family: 'Montserrat Black';
+font-family: 'GT Walsheim Pro';
+
+*/
+
+/* 2.3 Sections
+------------------------
+*/
+
+.bsas-ciudad,
+.bsas-distancias,
+.bsas-atributos div
+ {
+	min-height: 100vh;
+	background-size: cover;
+    background-position: center center;
+}
+
+
+/* 2.3 Buttons
+------------------------
+*/
+
+
+
+
+/* 2.4 Backgrounds
+------------------------
+*/
+
+.bsas-ciudad {
+	background-image: url(../img/buenos-aires/backgrounds/bg-ciudad.jpg);
+}
+
+.bsas-distancias {
+	background-image: url(../img/buenos-aires/backgrounds/bg-distancias.jpg);
+}
+
+.bsas-atributos .bsas-atributos-uno {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-uno.jpg);
+}
+
+.bsas-atributos .bsas-atributos-dos {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-dos.jpg);
+}
+.bsas-atributos .bsas-atributos-tres {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-tres.jpg);
+}
+.bsas-atributos .bsas-atributos-cuatro {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cuatro.jpg);
+}
+.bsas-atributos .bsas-atributos-cinco {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cinco.jpg);
+}
+.bsas-atributos .bsas-atributos-seis {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-seis.jpg);
+}
+.bsas-atributos .bsas-atributos-siete {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-siete.jpg);
+}
+.bsas-atributos .bsas-atributos-ocho {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-ocho.jpg);
+}
+.bsas-atributos .bsas-atributos-nueve {
+	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-nueve.jpg);
+}
+
+
+
+/* 2.4 Headers
+------------------------
+*/
+
+
+
+/* =====================
+    14.0 Responsive
+   ===================== */
+
+/* 14.1 Mobile
+------------------------
+*/
+
+
+
+@media screen and (max-width: 767px) {
+
+	
+}
+
+@media screen and (max-width: 576px) {
+
+	
+	}
+
+/* 15.2 Tablet
+------------------------
+*/
+
+
+
+@media screen and (max-width: 991px) {
+
+
+
+}
+
+
+
+@media screen and (min-width: 577px) and (max-width: 767px) {
+
+
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+
+
+}
