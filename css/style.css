@@ -7,15 +7,17 @@ Site: G20;
  * Table of Contents
  * 1.0 - Reset CSS
  * 2.0 - General
- 	* 2.1 - Colors & Fonts guide
- 	* 2.2 - Sections
- 	* 2.3 - Buttons
- 	* 2.4 - Backgrounds
- * 3.0 - 
- * 4.0 - 
- * 5.0 - 
- * 6.0 - 
- * 7.0 - 
+ 	* 2.1 - Sections
+ 	* 2.2 - Buttons
+ 	* 2.3 - Backgrounds
+ 	* 2.4 - Parallax
+ 	* 2.5 - Headers
+ 	* 2.6 - Overlays
+ * 3.0 - Buenos Aires
+ * 4.0 - Distancias
+ * 5.0 - Destacados
+ * 6.0 - Atributos
+ * 7.0 - Cumbre
  * 8.0 - 
  * 9.0 - 
  * 10.0 - 
@@ -50,7 +52,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-	font-family: sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -85,45 +87,30 @@ img{
     2.0 General
    ===================== */
 
-/* 2.1 Colors & Fonts guide
-------------------------
-*/
-
-
-/*Color reference
-
-Blue: #20242f;
-Green: #3de9be;
-Light text: #4b586a;
-Lighter text: #8c8f94;
-Gray: 2b2f3a;
-Background gray: #f8fafc;
-
-*/
-
-/*Font reference
-
-font-family: 'source_sans_prosemibold';
-font-family: 'source_sans_proregular';
-font-family: 'source_sans_prolight';
-font-family: 'Montserrat UltraLight';
-font-family: 'Montserrat Light';
-font-family: 'Montserrat Regular';
-font-family: 'Montserrat SemiBold';
-font-family: 'Montserrat Bold';
-font-family: 'Montserrat ExtraBold';
-font-family: 'Montserrat Black';
-font-family: 'GT Walsheim Pro';
-
-*/
-
-/* 2.3 Sections
+/* 2.1 Sections
 ------------------------
 */
 
 .bsas-ciudad,
 .bsas-distancias,
-.bsas-atributos div
+.bsas-destacados,
+.bsas-atributos-uno,
+.bsas-atributos-dos,
+.bsas-atributos-tres,
+.bsas-atributos-cuatro,
+.bsas-atributos-cinco,
+.bsas-atributos-seis,
+.bsas-atributos-siete,
+.bsas-atributos-ocho,
+.bsas-atributos-nueve,
+.cumbrelid,
+.enarg,
+.quotepresidente,
+.quotegral,
+.familypic,
+.imglobal,
+.continuidad
+
  {
 	min-height: 100vh;
 	background-size: cover;
@@ -131,14 +118,14 @@ font-family: 'GT Walsheim Pro';
 }
 
 
-/* 2.3 Buttons
+/* 2.2 Buttons
 ------------------------
 */
 
 
 
 
-/* 2.4 Backgrounds
+/* 2.3 Backgrounds
 ------------------------
 */
 
@@ -179,12 +166,434 @@ font-family: 'GT Walsheim Pro';
 	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-nueve.jpg);
 }
 
+.cumbrelid {
+	background-image: url(../img/cumbre/backgrounds/bg-cumbre.jpg);
+}
 
+.enarg {
+	background-image: url(../img/enarg/backgrounds/bg-enarg.jpg);
+}
 
-/* 2.4 Headers
+.quotegral {
+	background-image: url(../img/quotegral/backgrounds/bg-quotegral.jpg);
+}
+
+.familypic {
+	background-image: url(../img/familypic/backgrounds/bg-familypic.jpg);
+}
+
+.imglobal {
+	background-image: url(../img/imglobal/backgrounds/bg-imglobal.jpg);
+}
+
+.continuidad {
+	background-image: url(../img/continuidad/backgrounds/bg-continuidad.jpg);
+}
+
+/* 2.4 Parallax
 ------------------------
 */
 
+.bsas-atributos-uno,
+.bsas-atributos-dos,
+.bsas-atributos-tres,
+.bsas-atributos-cuatro,
+.bsas-atributos-cinco,
+.bsas-atributos-seis,
+.bsas-atributos-siete,
+.bsas-atributos-ocho,
+.bsas-atributos-nueve,
+.cumbrelid,
+.enarg,
+.quotepresidente,
+.quotegral,
+.familypic,
+.imglobal,
+.continuidad {
+	height: 100vh;
+	background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 2.5 Headers
+------------------------
+*/
+
+.bsas-header {
+	color: #6cb0b9;
+	text-transform: uppercase;
+	font-style: italic;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.bsas-header::after {
+	content: "";
+	width: 62px;
+	height: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+    display: block;
+    background-color: #a1c177;
+}
+
+.enarg-header {
+	text-align: center;
+	color: white;
+	text-transform: uppercase;
+	font-style: italic;
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.enarg-header::after {
+	content: "";
+	display: block;
+	width: 62px;
+	height: 10px;
+	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 20px;
+    background-color: #a1c177;
+}
+
+
+
+/* 2.6 Overlays
+------------------------
+*/
+
+.bsas-logo {
+	position: absolute;
+	top: 100px;
+	left: 7%;
+    width: 93%;
+    height: 180vh;
+	background-image: url(../img/general/mandala.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.destacados-logo {
+	position: absolute;
+	top: 20px;
+	left: -50px;
+    width: 50%;
+    height: 76vh;
+    z-index: 1;
+	background-image: url(../img/general/mandala.png);
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* =====================
+    3.0 Buenos Aires
+   ===================== */
+
+.bsas-ciudad {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.bsas-ciudad .bsas-header {
+	margin-top: 205px;
+}
+
+
+.bsas-ciudad p {
+	font-size: 16px;
+    line-height: 20px;
+	color: #fff;
+}
+
+.bsas-iconos {
+	width: 43%;
+    position: absolute;
+    left: 40%;
+    bottom: 20%;
+}
+
+
+
+/* =====================
+    4.0 Distancias
+   ===================== */
+
+.bsas-distancias {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ba-distancias-left {
+	margin-top: 20vh;
+}
+
+.ba-distancias-right {
+	margin-bottom: -20vh;
+}
+
+.bsas-distancias p {
+	font-size: 16px;
+    line-height: 20px;
+	color: #fff;
+}
+
+.ba-distancias-right {
+	text-align: center;
+}
+
+.bsas-distancias img{
+	max-width: 360px;	
+}
+
+/* =====================
+    5.0 Destacados
+   ===================== */
+
+.bsas-destacados {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: relative;
+}
+
+.bsas-destacados-img {
+	height: 650px;
+}
+
+.ba-destacados-burbujas {
+	background-size: cover;
+    background-position: center center;
+    position: absolute;
+}
+
+.ba-destacados-burbujas:nth-of-type(1),
+.ba-destacados-burbujas:nth-of-type(2) {
+	width: 240px;
+	height: 240px;
+	border-radius: 120px;
+}
+
+.ba-destacados-burbujas:nth-of-type(3),
+.ba-destacados-burbujas:nth-of-type(4) {
+	width: 180px;
+	height: 180px;
+	border-radius: 90px;
+}
+
+.ba-destacados-burbujas:nth-of-type(1) {
+	background-image: url(../img/destacados/backgrounds/tango.jpg);
+	right: 15px;
+    top: 30px;
+}
+
+.ba-destacados-burbujas:nth-of-type(2) {
+	background-image: url(../img/destacados/backgrounds/puertomadero.jpg);
+	top: 190px;
+}
+
+.ba-destacados-burbujas:nth-of-type(3) {
+	background-image: url(../img/destacados/backgrounds/futbol.jpg);
+	top: 300px;
+    right: 30px;
+}
+
+.ba-destacados-burbujas:nth-of-type(4) {
+	background-image: url(../img/destacados/backgrounds/teatros.jpg);
+	top: 450px;
+    left: 90px;
+}
+
+.bsas-destacados-info {
+	margin-top: 100px;
+}
+
+.bsas-destacados-info h3 {
+	display: inline-block;
+	margin-top: 40px;
+	padding: 5px 10px 2px 10px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 700;
+}
+
+.bsas-destacados-info p {
+	margin-top: 20px;
+}
+
+.bsas-destacados-info h3:nth-of-type(1){
+	background-color: #a1c373;
+}
+
+.bsas-destacados-info h3:nth-of-type(2){
+	background-color: #0093d7;
+}
+
+.bsas-destacados-info h3:nth-of-type(3){
+	background-color: #1269b0;
+}
+
+
+/* =====================
+    6.0 Atributos
+   ===================== */
+
+.bsas-atributos-uno,
+.bsas-atributos-dos,
+.bsas-atributos-tres,
+.bsas-atributos-cuatro,
+.bsas-atributos-cinco,
+.bsas-atributos-seis,
+.bsas-atributos-siete,
+.bsas-atributos-ocho,
+.bsas-atributos-nueve {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.ba-atributos-info {
+	width: 25%;
+	margin: auto;
+}
+
+.ba-atributos-info-larga {
+	width: 50%;
+	margin: auto;
+}
+
+.ba-atr-numeros {
+	text-align: center;
+	font-size: 100px;
+	font-weight: 700;
+	color: #01babd;
+}
+
+.bsas-atributos-uno .ba-atr-numeros {
+	color: #489ab1;
+}
+
+.bsas-atributos-dos .ba-atr-numeros {
+	color: #3F8FA7;
+}
+
+.bsas-atributos-tres .ba-atr-numeros {
+	color: #275ba0;
+}
+
+.bsas-atributos-cuatro .ba-atr-numeros,
+.bsas-atributos-siete .ba-atr-numeros {
+	color: #d17220;
+}
+
+.bsas-atributos-cinco .ba-atr-numeros {
+	color: #993e8b;
+}
+
+.bsas-atributos-seis .ba-atr-numeros {
+	color: #c93f50;
+}
+
+.ba-atr-bajada {
+	text-align: center;
+	font-size: 40px;
+	font-weight: 700;
+	color: #fff;	
+}
+
+.ba-atr-data {
+	margin-top: 10px;
+	font-size: 19px;
+    line-height: 21px;
+	color: #fff;	
+}
+
+
+/* =====================
+    6.0 Cumbre
+   ===================== */
+
+.cumbrelid {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.cumbrelid .cumbre-left {
+	text-align: center;
+}
+
+.cumbrelid .cumbre-left p {
+	font-size: 70px;
+	font-weight: 900;
+	font-style: italic;
+	color: #a1c176;
+}
+
+.cumbrelid .cumbre-left span {
+	display: block;
+	margin: 5px 0;
+	color: white;
+	text-transform: uppercase;
+}
+
+.cumbrelid .cumbre-right p{
+	margin-bottom: 14px;
+	color: white;
+}
+
+/* =====================
+    6.0 En Argentina
+   ===================== */
+
+.enarg {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.enarg-left,
+.enarg-right {
+	text-align: center;
+}
+
+.enarg p {
+	font-size: 70px;
+	font-weight: 900;
+	font-style: italic;
+}
+
+.enarg .yellow {
+	color: #f3d600;
+}
+
+.enarg .green {
+	color: #cad225;
+}
+
+.enarg .ogreen {
+	color: #a1c176;
+}
+
+.enarg .blue {
+	color: #6cb0b9;
+}
+
+.enarg span {
+	display: block;
+	margin: 5px 0;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+}
+
+.enarg .small {
+	font-size: 14px;
+}
 
 
 /* =====================
