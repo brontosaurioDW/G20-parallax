@@ -18,10 +18,10 @@ Site: G20;
  * 5.0 - Destacados
  * 6.0 - Atributos
  * 7.0 - Cumbre
- * 8.0 - 
- * 9.0 - 
- * 10.0 - 
- * 11.0 - 
+ * 8.0 - En Argentina
+ * 9.0 - Quote Presidente
+ * 10.0 - Quote General
+ * 11.0 - Fotos de familia
  * 12.0 - 
  * 12.0 - 
  * 14.0 - Responsive
@@ -107,8 +107,7 @@ img{
 .enarg,
 .quotepresidente,
 .quotegral,
-.familypic,
-.imglobal,
+.impactolobal,
 .continuidad
 
  {
@@ -174,16 +173,24 @@ img{
 	background-image: url(../img/enarg/backgrounds/bg-enarg.jpg);
 }
 
+.quotepresidente {
+	background-color: #fff;
+	background-image: url(../img/general/mandalaoscuro.png);
+	background-size: 50%!important;
+}
+
 .quotegral {
-	background-image: url(../img/quotegral/backgrounds/bg-quotegral.jpg);
+	background: #6b1a89; /* Old browsers */
+	background-image: url(../img/general/mandala-big.png);
+	background: -moz-linear-gradient(45deg, #6b1a89 0%, #2b67b8 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(45deg, #6b1a89 0%,#2b67b8 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(45deg, #6b1a89 0%,#2b67b8 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6b1a89', endColorstr='#2b67b8',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+	background-image: url(../img/general/mandala-big.png), linear-gradient(45deg, #6b1a89 0%,#2b67b8 100%);
 }
 
-.familypic {
-	background-image: url(../img/familypic/backgrounds/bg-familypic.jpg);
-}
-
-.imglobal {
-	background-image: url(../img/imglobal/backgrounds/bg-imglobal.jpg);
+.impactolobal {
+	background-image: url(../img/impactolobal/backgrounds/bg-impactolobal.jpg);
 }
 
 .continuidad {
@@ -207,8 +214,7 @@ img{
 .enarg,
 .quotepresidente,
 .quotegral,
-.familypic,
-.imglobal,
+.impactolobal,
 .continuidad {
 	height: 100vh;
 	background-attachment: fixed;
@@ -259,6 +265,14 @@ img{
     background-color: #a1c177;
 }
 
+.impglobal {
+    padding-bottom: 20px;
+    color: #6cb0b9;
+    text-transform: uppercase;
+    font-style: italic;
+    font-size: 28px;
+    font-weight: 900;
+}
 
 
 /* 2.6 Overlays
@@ -514,7 +528,7 @@ img{
 
 
 /* =====================
-    6.0 Cumbre
+    7.0 Cumbre de líderes
    ===================== */
 
 .cumbrelid {
@@ -525,7 +539,17 @@ img{
 
 .cumbrelid .cumbre-left {
 	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
+
+.cumbrelid .cumbre-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
 
 .cumbrelid .cumbre-left p {
 	font-size: 70px;
@@ -547,7 +571,7 @@ img{
 }
 
 /* =====================
-    6.0 En Argentina
+    8.0 En Argentina
    ===================== */
 
 .enarg {
@@ -595,6 +619,160 @@ img{
 	font-size: 14px;
 }
 
+/* =====================
+    9.0 Quote Presidente
+   ===================== */
+
+.quotepresidente {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.quotepresidente .imgpresidente {
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+	border-radius: 50%;
+}
+
+.quotepresidente .quote-left {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.quotepresidente .quote-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-right: 65px;
+}
+
+.quotepresidente .quote-right::after {
+	content: url('../img/quotepresidente/icono-smaller.png');
+	position: absolute;
+	right: 0;
+	top: 36px;
+}
+
+.quotepresidente .quote-right p {
+	font-size: 20px;
+	line-height: 25px;
+	margin-bottom: 20px
+}
+
+.quotepresidente .quote-right span {
+	font-size: 16px;
+	font-weight: 700;
+	color: #6cb0b9;
+}
+
+/* =====================
+    10.0 Quote General
+   ===================== */
+
+.quotegral {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.quotegral .enarg-header {
+	font-weight: 700;
+    line-height: 45px;
+}
+
+/* =====================
+    11.0 Fotos de familia
+   ===================== */
+
+.familypic .row {
+	position: relative;
+}
+
+.fp-bajada {
+    z-index: 1;
+    width: 400px;
+    position: absolute;
+    top: 45px;
+    padding: 35px;
+    background-color: #fff;
+}
+
+.fp-bajada .bsas-header {
+	font-size: 20px;
+}
+
+.fp-bajada .bsas-header::after {
+    width: 40px;
+    height: 6px;
+}
+
+.fp-bajada p {
+	font-size: 12px;
+    line-height: 13px;
+}
+
+/* =====================
+    12.0 Impacto Global
+   ===================== */
+
+.impactolobal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.impinfo {
+	margin-bottom: 50px;
+}
+
+.impinfo p {
+	color: #fff;
+}
+
+.impnumeros p {
+	font-size: 70px;
+	font-weight: 900;
+	font-style: italic;
+}
+
+
+.impnumeros .yellow {
+	color: #f3d600;
+}
+
+.impnumeros .green {
+	color: #cad225;
+}
+
+.impnumeros .ogreen {
+	color: #a1c176;
+}
+
+.impnumeros .blue {
+	color: #6cb0b9;
+}
+
+.impnumeros span {
+	display: block;
+	margin: 5px 0;
+	font-size: 18px;
+	color: white;
+	text-transform: uppercase;
+}
+
+
+/* =====================
+    13.0 Continuidad
+   ===================== */
+
+.continuidad {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
 
 /* =====================
     14.0 Responsive
