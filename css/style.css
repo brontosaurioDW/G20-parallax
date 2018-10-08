@@ -140,57 +140,6 @@ img{
 	background-image: url(../img/buenos-aires/backgrounds/bg-ciudad.jpg);
 }
 
-
-/*
-
-.bsas-distancias {
-	background-image: url(../img/buenos-aires/backgrounds/bg-distancias.jpg);
-}
-
-
-
-
-.bsas-atributos .bsas-atributos-uno {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-uno.jpg);
-}
-
-.bsas-atributos .bsas-atributos-dos {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-dos.jpg);
-}
-.bsas-atributos .bsas-atributos-tres {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-tres.jpg);
-}
-.bsas-atributos .bsas-atributos-cuatro {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cuatro.jpg);
-}
-.bsas-atributos .bsas-atributos-cinco {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cinco.jpg);
-}
-.bsas-atributos .bsas-atributos-seis {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-seis.jpg);
-}
-.bsas-atributos .bsas-atributos-siete {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-siete.jpg);
-}
-.bsas-atributos .bsas-atributos-ocho {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-ocho.jpg);
-}
-.bsas-atributos .bsas-atributos-nueve {
-	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-nueve.jpg);
-}
-
-
-
-.cumbrelid {
-	background-image: url(../img/cumbre/backgrounds/bg-cumbre.jpg);
-}
-
-.enarg {
-	background-image: url(../img/enarg/backgrounds/bg-enarg.jpg);
-}
-
-*/
-
 .quotepresidente {
 	background-color: #fff;
 	background-image: url(../img/general/mandalaoscuro.png);
@@ -208,15 +157,6 @@ img{
 }
 
 
-/*
-.impactolobal {
-	background-image: url(../img/impactolobal/backgrounds/bg-impactolobal.jpg);
-}
-
-.continuidad {
-	background-image: url(../img/continuidad/backgrounds/bg-continuidad.jpg);
-}
-*/
 
 /* 2.4 Parallax
 ------------------------
@@ -841,7 +781,7 @@ img{
 @media screen and (min-width: 992px) and (max-width: 1199px) {
 
 
-/* Infografía 1 */
+/* ////Infografía 1///// */
 
 	/* Buenos Aires */
 
@@ -863,6 +803,27 @@ img{
 	    font-size: 36px;
 	}
 	
+
+/* ////Infografía 2///// */	
+
+	/* Quote presidente */
+
+	.quotepresidente .imgpresidente {
+	    height: 200px;
+	    width: 200px;
+	}
+
+	/* Impacto */
+
+	.impnumeros p {
+    	font-size: 50px;
+    }
+
+    .impnumeros span {
+    	font-size: 14px;
+	}
+
+
 }
 
 
@@ -1001,8 +962,40 @@ img{
 
 /* ////Infografía 2///// */
 
+/* Quote presidente */
 
+	.quotepresidente .imgpresidente {
+		height: 300px;
+	    width: 300px;
+	    margin: auto;
+	    margin-bottom: 40px;
+	}
 
+	/* Impacto */
+	.impnumeros {
+		text-align: center;
+	}
+
+	.impnumeros p {
+    	font-size: 50px;
+    }
+
+    .impnumeros span {
+    	margin-bottom: 20px;
+    	font-size: 14px;
+
+	}
+
+	/* Backgrounds */
+
+	.impactolobal {
+		background-image: url(../img/impactolobal/backgrounds/bg-impactolobal.jpg);
+	}
+
+	.continuidad {
+		background-image: url(../img/continuidad/backgrounds/bg-continuidad.jpg);
+	}
+	
 
 }
 
@@ -1068,7 +1061,63 @@ img{
 
 	
 
-	/* ////Infografía 2///// */
+/* ////Infografía 2///// */
+
+
+	/* En Argentina */
+
+	.enarg p {
+	    font-size: 50px;
+	}
+
+	.enarg span {
+    	font-size: 16px;
+    	margin-bottom: 20px;
+    }
+
+
+/* Quote presidente */
+
+	.quotepresidente .imgpresidente {
+		height: 300px;
+	    width: 300px;
+	    margin: auto;
+	    margin-bottom: 40px;
+	}
+
+	.quotepresidente .quote-right {
+	    padding-right: 85px;
+	}
+
+
+	.quotepresidente .quote-right::after {
+    	top: -23px;
+	}
+
+	/* Impacto */
+	.impnumeros {
+		text-align: center;
+	}
+
+	.impnumeros p {
+    	font-size: 50px;
+    }
+
+    .impnumeros span {
+    	margin-bottom: 20px;
+    	font-size: 14px;
+
+	}
+
+	/* Backgrounds */
+
+	.impactolobal {
+		background-image: url(../img/impactolobal/backgrounds/bg-impactolobal.jpg);
+	}
+
+	.continuidad {
+		background-image: url(../img/continuidad/backgrounds/bg-continuidad.jpg);
+	}
 	
 }
 
@@ -1120,28 +1169,58 @@ img{
 
 /* ////Infografía 2///// */
 
-}
+
+	/* En Argentina */
+
+	.cumbrelid .cumbre-left p {
+	    font-size: 50px;
+	}
+	
+	.cumbrelid .cumbre-left span {
+	    margin-bottom: 20px;
+	}
+
+	.enarg {
+		min-height: 150vh!important;
+	}
+
+	.enarg p {
+	    margin-top: 20px;
+	}
+
+	.enarg span {
+	    margin-bottom: 5px;
+	}
+
+	/* Quote general */
+
+	.quotegral .enarg-header {
+	    line-height: 35px;
+    	font-size: 30px;
+	}
+
+	/* Quote presidente */
+
+	.quotepresidente .imgpresidente {
+		height: 250px;
+	    width: 250px;
+	}
+
+	.quotepresidente .quote-right {
+	    padding-right: 0!important;
+	}
 
 
+	.quotepresidente .quote-right::after {
+    	display: none!important;
+	}
 
 
+	/* Foto de Familia */
 
-@media screen and (max-width: 991px) {
-
-
-
-}
-
-
-
-@media screen and (min-width: 577px) and (max-width: 767px) {
-
-
-
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 991px) {
+	.familypic .fp-bajada {
+		position: relative;
+	}
 
 
 
