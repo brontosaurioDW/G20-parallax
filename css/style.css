@@ -290,13 +290,15 @@ img{
 	color: #fff;
 }
 
+
+/*
 .bsas-iconos {
 	width: 43%;
     position: absolute;
     left: 40%;
-    bottom: 20%;
+    bottom: 10%;
 }
-
+*/
 
 
 /* =====================
@@ -788,11 +790,11 @@ img{
 	.bsas-ciudad .bsas-header {
 	    margin-top: 166px;
 	}
-
+/*
 	.bsas-iconos {
 	    bottom: 15%;
 	}
-
+*/
 	/* Atributos */
 
 	.ba-atr-numeros {
@@ -851,12 +853,13 @@ img{
 	.bsas-ciudad .bsas-dets {
 		padding-bottom: 80px;
 	}
-
+/*
 	.bsas-iconos {
 		width: 55%;
 		left: 23%;
 		bottom: 18%;
 	}
+*/
 
 	/* Atributos */
 
@@ -1016,10 +1019,11 @@ img{
 	.bsas-ciudad .bsas-header {
 	    margin-top: 100px;
 	}
-
+/*
 	.bsas-iconos {
 		bottom: 33%;
 	}
+*/
 
 	/* Distancias */
 
@@ -1137,12 +1141,14 @@ img{
 	.bsas-ciudad .bsas-header {
 	    margin-top: 75px!important;
 	}
-
+/*
 	.bsas-iconos {
 		width: 90%;
 		bottom: 23%!important;
     	left: 5%;
 	}
+*/
+
 
 	/*Destacados*/
 
