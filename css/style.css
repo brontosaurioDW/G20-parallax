@@ -25,6 +25,7 @@ Site: G20;
  * 12.0 - 
  * 12.0 - 
  * 14.0 - Responsive
+ * 15.0 - Full page scroll + parallax
 
  */
 
@@ -91,6 +92,8 @@ img{
 ------------------------
 */
 
+
+
 .bsas-ciudad,
 .bsas-distancias,
 .bsas-destacados,
@@ -111,9 +114,11 @@ img{
 .continuidad
 
  {
+
 	min-height: 100vh;
 	background-size: cover;
     background-position: center center;
+
 }
 
 
@@ -128,13 +133,21 @@ img{
 ------------------------
 */
 
+
+
 .bsas-ciudad {
 	background-image: url(../img/buenos-aires/backgrounds/bg-ciudad.jpg);
 }
 
+
+/*
+
 .bsas-distancias {
 	background-image: url(../img/buenos-aires/backgrounds/bg-distancias.jpg);
 }
+
+
+
 
 .bsas-atributos .bsas-atributos-uno {
 	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-uno.jpg);
@@ -165,6 +178,8 @@ img{
 	background-image: url(../img/buenos-aires/backgrounds/bg-atributos-nueve.jpg);
 }
 
+
+
 .cumbrelid {
 	background-image: url(../img/cumbre/backgrounds/bg-cumbre.jpg);
 }
@@ -172,6 +187,8 @@ img{
 .enarg {
 	background-image: url(../img/enarg/backgrounds/bg-enarg.jpg);
 }
+
+*/
 
 .quotepresidente {
 	background-color: #fff;
@@ -189,6 +206,8 @@ img{
 	background-image: url(../img/general/mandala-big.png), linear-gradient(45deg, #6b1a89 0%,#2b67b8 100%);
 }
 
+
+/*
 .impactolobal {
 	background-image: url(../img/impactolobal/backgrounds/bg-impactolobal.jpg);
 }
@@ -196,10 +215,12 @@ img{
 .continuidad {
 	background-image: url(../img/continuidad/backgrounds/bg-continuidad.jpg);
 }
+*/
 
 /* 2.4 Parallax
 ------------------------
 */
+
 
 .bsas-atributos-uno,
 .bsas-atributos-dos,
@@ -217,11 +238,13 @@ img{
 .impactolobal,
 .continuidad {
 	height: 100vh;
-	background-attachment: fixed;
+	/*background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover; */
 }
+
+
 
 /* 2.5 Headers
 ------------------------
@@ -342,12 +365,11 @@ img{
 	justify-content: center;
 }
 
-.ba-distancias-left {
-	margin-top: 20vh;
-}
-
+.ba-distancias-left,
 .ba-distancias-right {
-	margin-bottom: -20vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .bsas-distancias p {
@@ -422,8 +444,11 @@ img{
     left: 90px;
 }
 
+.bsas-destacados-img,
 .bsas-destacados-info {
-	margin-top: 100px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .bsas-destacados-info h3 {
@@ -439,15 +464,15 @@ img{
 	margin-top: 20px;
 }
 
-.bsas-destacados-info h3:nth-of-type(1){
+.bsas-destacados-info div:nth-of-type(1) h3{
 	background-color: #a1c373;
 }
 
-.bsas-destacados-info h3:nth-of-type(2){
+.bsas-destacados-info div:nth-of-type(2) h3{
 	background-color: #0093d7;
 }
 
-.bsas-destacados-info h3:nth-of-type(3){
+.bsas-destacados-info div:nth-of-type(3) h3{
 	background-color: #1269b0;
 }
 
@@ -469,6 +494,7 @@ img{
 	flex-direction: column;
 	justify-content: center;
 }
+
 
 .ba-atributos-info {
 	width: 25%;
@@ -521,6 +547,7 @@ img{
 
 .ba-atr-data {
 	margin-top: 10px;
+	text-align: center;
 	font-size: 19px;
     line-height: 21px;
 	color: #fff;	
@@ -774,6 +801,29 @@ img{
 	justify-content: center;
 }
 
+.continuidad p {
+	color: #fff;
+}
+
+.contidest {
+	display: inline-block;
+	position: relative;
+  	float: right;
+  	margin-top: 50px;
+    padding: 20px;
+	background-color: #fff;
+}
+
+.contidest h4 {
+	color: #111;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.contidest p {
+	color: #111;
+}
+
 /* =====================
     14.0 Responsive
    ===================== */
@@ -784,15 +834,269 @@ img{
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+
+
+/* Infografía 1 */
+
+	/* Buenos Aires */
+
+	.bsas-ciudad .bsas-header {
+	    margin-top: 166px;
+	}
+
+	.bsas-iconos {
+	    bottom: 15%;
+	}
+
+	/* Atributos */
+
+	.ba-atr-numeros {
+		font-size: 90px;
+	}
+
+	.ba-atr-bajada {
+	    font-size: 36px;
+	}
+	
+}
+
+
+
+@media screen and (max-width: 991px) {
+
+
+/* Infografía 1 */
+
+	/* Buenos Aires */
+	
+	.bsas-ciudad {
+		margin-top: -2px;
+	}
+
+	.bsas-ciudad .bsas-header {
+	    margin-top: 110px;
+	    color: #fff;
+	}
+
+	.bsas-ciudad .bsas-mapa {
+		padding-top: 80px;
+	}
+
+	.bsas-ciudad .bsas-dets {
+		padding-bottom: 80px;
+	}
+
+	.bsas-iconos {
+		width: 55%;
+		left: 23%;
+		bottom: 18%;
+	}
+
+	/* Atributos */
+
+	.ba-atr-numeros {
+		font-size: 76px;
+	}
+
+	.ba-atr-bajada {
+	    font-size: 30px;
+	}
+
+
+	/* Imágenes Parallax */
+
+	.parallax img {
+		display: none;
+	}
+
+	.bsas-distancias {
+		background-image: url(../img/buenos-aires/backgrounds/bg-distancias.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-uno {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-uno.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-dos {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-dos.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-tres {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-tres.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-cuatro {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cuatro.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-cinco {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cinco.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-seis {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-seis.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-siete {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-siete.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-ocho {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-ocho.jpg);
+	}
+
+	.bsas-atributos .bsas-atributos-nueve {
+		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-nueve.jpg);
+	}
+
+
+
+	.cumbrelid {
+		background-image: url(../img/cumbre/backgrounds/bg-cumbre.jpg);
+	}
+
+	.enarg {
+		background-image: url(../img/enarg/backgrounds/bg-enarg.jpg);
+	}
+
+
+	.bsas-atributos-uno,
+	.bsas-atributos-dos,
+	.bsas-atributos-tres,
+	.bsas-atributos-cuatro,
+	.bsas-atributos-cinco,
+	.bsas-atributos-seis,
+	.bsas-atributos-siete,
+	.bsas-atributos-ocho,
+	.bsas-atributos-nueve,
+	.cumbrelid,
+	.enarg,
+	.quotepresidente,
+	.quotegral,
+	.impactolobal,
+	.continuidad {
+		background-attachment: fixed;
+	    background-position: center;
+	    background-repeat: no-repeat;
+	    background-size: cover;
+	}
+
+
+		/* Atributos */
+
+	.ba-atr-numeros {
+		font-size: 55px!important;
+	}
+
+	.ba-atr-bajada {
+	    font-size: 25px!important;
+	}
+
+
+
+
 
 	
 }
 
-@media screen and (max-width: 576px) {
+
+
+@media screen and (max-width: 768px) {
+
+
+/* Infografía 1 */
+
+	/* Buenos Aires */
+
+	.bsas-ciudad .bsas-header {
+	    margin-top: 100px;
+	}
+
+	.bsas-iconos {
+		bottom: 33%;
+	}
+
+	/* Distancias */
+
+	.bsas-distancias img {
+	    max-width: 260px;
+	    margin-top: 50px;
+	}
+
+	/* Atributos */
+
+
+	.ba-atributos-info {
+    	width: 35%;
+	}
+
+	.ba-atr-numeros {
+		font-size: 76px;
+	}
+
+	.ba-atr-bajada {
+	    font-size: 30px;
+	}
+
+	/* Destacados */
+
+	.ba-destacados-burbujas:nth-of-type(1),
+	.ba-destacados-burbujas:nth-of-type(3) {
+		width: 180px;
+		height: 180px;
+		border-radius: 90px;
+	}
+
+	.ba-destacados-burbujas:nth-of-type(2),
+	.ba-destacados-burbujas:nth-of-type(4) {
+		width: 160px;
+		height: 160px;
+		border-radius: 80px;
+	}
 
 	
+	
+}
+
+
+@media screen and (max-width: 575px) {
+	
+
+		/* Buenos Aires */
+
+	.bsas-ciudad .bsas-header {
+	    margin-top: 100px;
 	}
+
+	.bsas-iconos {
+		width: 90%;
+		bottom: 10%!important;
+    	left: 5%;
+	}
+
+	/*Destacados*/
+
+	.bsas-destacados-img {
+		display: none;
+	}
+
+
+	/*Atributos*/
+
+	.ba-atributos-info {
+    	width: 75%!important;
+	}
+
+	.ba-atr-numeros {
+		font-size: 90px!important;
+	}
+
+	.ba-atr-bajada {
+	    font-size: 40px!important;
+	}
+
+}
 
 /* 15.2 Tablet
 ------------------------
@@ -819,4 +1123,52 @@ img{
 
 
 
+}
+
+
+
+
+
+
+/* =====================
+    15.0 Parallax
+   ===================== */
+
+
+
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
+.parallax-container .parallax {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+.parallax-container .parallax img {
+  opacity: 0;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.pin-top, .pin-bottom {
+  position: relative;
+}
+
+.pinned {
+  position: fixed !important;
 }
