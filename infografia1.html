@@ -16,6 +16,11 @@
       @import url("https://www.g20.org/profiles/g20/themes/custom/g20_poncheado/css/g20_poncheado_estilosg20dru.css?pfd6wh");
       </style>
 
+
+      <link rel="stylesheet" type="text/css" href="css/vendor/tooltipster/tooltipster.bundle.min.css" />
+
+      <link rel="stylesheet" type="text/css" href="css/vendor/tooltipster/plugins/tooltipster/sideTip/themes/tooltipster-sideTip-shadow.min.css" />
+
       <link rel="stylesheet" type="text/css" href="css/style.css">
       
       <link href="https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i,900,900i" rel="stylesheet">
@@ -26,33 +31,127 @@
       <header>
       </header>
       <main class="main">
+         <div class="bsas-logo"></div>
          <section class="bsas-ciudad">
             <div class="container">
                <div class="row justify-content-center">
-                  <div class="col-sm-8 col-lg-5 bsas-mapa">
-                     <img src="img/buenos-aires/mapa.png" usemap="#image-map" alt="mapa Buenos Aires">
+                  <div class="col-sm-12 col-lg-5 bsas-mapa">
+                     <img id="mapadesktop" src="img/buenos-aires/mapadesktop.png" usemap="#mapadesktopuse">
+
+                     <map name="mapadesktopuse" id="mapadesktopmap">
+                         <area shape="rect" coords="253,160,298,193" data-tooltip-content="#colon" class="tooltip" title="colon" />
+                         <area shape="rect" coords="313,168,333,213" data-tooltip-content="#obelisco" class="tooltip" title="obelisco" />
+                         <area shape="rect" coords="337,220,390,238" data-tooltip-content="#casarosada" class="tooltip" title="casarosada" />
+                         <area shape="rect" coords="376,181,337,210" data-tooltip-content="#cck" class="tooltip" title="cck" />
+                         <area shape="rect" coords="231,81,262,101" data-tooltip-content="#costasalguero" class="tooltip" title="costasalguero" />
+                         <area shape="rect" coords="313,147,361,164" data-tooltip-content="#palaciosanmartin" class="tooltip" title="palaciosanmartin" />
+                         <area shape="rect" coords="205,314,263,334" data-tooltip-content="#casadegobierno" class="tooltip" title="casadegobierno" />
+                         <area shape="rect" coords="186,109,252,128" data-tooltip-content="#cec" class="tooltip" title="cec" />
+                         <area shape="rect" coords="359,248,413,281" data-tooltip-content="#caminito" class="tooltip" title="caminito" />
+                         <area shape="rect" coords="140,375,200,409" data-tooltip-content="#villaolimpica" class="tooltip" title="villaolimpica" />
+                     </map>
 
 
-
-<map name="image-map">
-    <area target="" alt="" title="" href="#colon" coords="906,591,723,462" shape="0">
-    <area target="" alt="" title="" href="#obelisco" coords="922,490,995,645" shape="0">
-    <area target="" alt="" title="" href="#casarosada" coords="998,646,1167,720" shape="0">
-    <area target="" alt="" title="" href="#cck" coords="1123,534,996,617" shape="0">
-    <area target="" alt="" title="" href="#costasalguero" coords="667,232,782,312" shape="0">
-    <area target="" alt="" title="" href="#palaciosanmartin" coords="924,433,1069,483" shape="0">
-    <area target="" alt="" title="" href="#casadegobierno" coords="608,930,781,993" shape="0">
-    <area target="" alt="" title="" href="#cec" coords="562,329,749,384" shape="0">
-    <area target="" alt="" title="" href="#caminito" coords="1072,730,1231,834" shape="0">
-    <area target="" alt="" title="" href="#villaolimpica" coords="429,1119,589,1221" shape="0">
-</map>
+                     <img id="mapamobile" src="img/buenos-aires/mapamobile.png" usemap="#mapamobileuse">
 
 
+                     <map name="mapamobileuse" id="mapamobilemap">
+                        <area shape="rect" coords="159,101,188,122" data-tooltip-content="#colon" class="tooltip" title="colon" />
+                         <area shape="rect" coords="198,106,210,139" data-tooltip-content="#obelisco" class="tooltip" title="obelisco" />
+                         <area shape="rect" coords="215,140,246,151" data-tooltip-content="#casarosada" class="tooltip" title="casarosada" />
+                         <area shape="rect" coords="213,112,236,131" data-tooltip-content="#cck" class="tooltip" title="cck" />
+                         <area shape="rect" coords="145,50,165,65" data-tooltip-content="#costasalguero" class="tooltip" title="costasalguero" />
+                         <area shape="rect" coords="193,90,227,105" data-tooltip-content="#palaciosanmartin" class="tooltip" title="palaciosanmartin" />
+                         <area shape="rect" coords="128,193,167,213" data-tooltip-content="#casadegobierno" class="tooltip" title="casadegobierno" />
+                         <area shape="rect" coords="117,66,156,79" data-tooltip-content="#cec" class="tooltip" title="cec" />
+                         <area shape="rect" coords="227,155,261,178" data-tooltip-content="#caminito" class="tooltip" title="caminito" />
+                         <area shape="rect" coords="88,233,126,261" data-tooltip-content="#villaolimpica" class="tooltip" title="villaolimpica" />
+                     </map>
+
+
+                     <div class="tooltip_templates">
+                         <div id="colon">
+                             <h4>Teatro Colón (G20)</h4>
+                             <p>Por su tamaño, acústica y trayectoria, es considerado uno de los mejores cinco teatros líricos del mundo. Luciano Pavarotti, Astor Piazzolla, Plácido Domingo, Richard Strauss, Igor Stravinsky, Daniel Barenboim y Mijail Barishnikov, entre otras figuras mundiales del arte y de la cultura, han actuado en su sala principal.</p>
+                             <p>*Sede de la actividad recreativa de líderes del G20 2018</p>
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="obelisco">
+                             <h4>Obelisco</h4>
+                             <p>Construido en 1936 con motivo del cuarto centenario de la primera fundación de la ciudad, cuenta con 206 escalones en línea recta en su interior, mide 67,5 metros y pesa 170 toneladas.</p>
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="casarosada">
+                             <h4>Casa Rosada</h4>
+                             <p>El emblemático edificio, ubicado frente a la Plaza de Mayo, funciona como sede del Poder Ejecutivo.</p>
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="cck">
+                           <h4>CCK (G20)</h4>
+                           <p>Declarado Monumento Histórico Nacional en 1997, el antiguo Palacio de Correos y Telecomunicaciones ha sido inmaculadamente renovado y cuenta actualmente con diversos espacios culturales. Es el centro cultural más grande de América Latina y el tercero en el mundo.</p>
+                           <p>*Sede de numerosas reuniones del G20 2018</p>
+                             
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="costasalguero">
+                             <h4>Centro Costa Salguero (G20)</h4>
+                              <p>Ubicado a la vera del Río de la Plata, es uno de los principales centros de convenciones del país.</p>
+                              <p>*Sede de la Cumbre de Líderes del G20 2018</p>
+
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="palaciosanmartin">
+                             <h4>Palacio San Martín (G20)</h4>
+                             <p>Es un exponente de L'École des Beaux-Arts y oficia de sede ceremonial de la Cancillería argentina.</p>
+                             <p>*Sede de las reuniones ministeriales de Relaciones Exteriores y de Agricultura</p>
+
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="casadegobierno">
+                             <h4>Casa de Gobierno de la ciudad de Buenos Aires</h4>
+                             <p>La nueva sede del Gobierno de la ciudad de Buenos Aires, inaugurada en 2015, fue proyectada por el prestigioso estudio internacional Foster & Partners. Con 38.000 m2 y realizado con técnicas y estándares de cuidado ambiental, es el primer edificio público de Sudamérica en alcanzar la certificación LEED Gold.</p>
+
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="cec">
+                             <h4>CEC (G20)</h4>
+                             <p>El lugar se destaca por su originalidad arquitectónica, la versatilidad de espacios interiores libres de columnas y terrazas verdes que armonizan con la zona.</p>
+                             <p>*Sede de las reuniones ministeriales de Finanzas</p>
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="caminito">
+                             <h4>Caminito</h4>
+                             <p>Con sus típicos conventillos de chapa y sus paredes pintadas de colores, es un auténtico museo a cielo abierto.</p>
+                         </div>
+                     </div>
+
+                     <div class="tooltip_templates">
+                         <div id="villaolimpica">
+                             <h4>Villa Olímpica</h4>
+                             <p>La flamante construcción ubicada en el sur de la ciudad, que recibió a casi 4000 atletas durante los Juegos Olímpicos de la Juventud de Buenos Aires 2018, se convertirá en un barrio nuevo de la ciudad.</p>
+                         </div>
+                     </div>
 
 
 
                   </div>
-                  <div class="col-sm-8 col-lg-5 bsas-dets">
+                  <div class="col-sm-12 col-lg-5 bsas-dets">
                      <h3 class="bsas-header">Buenos Aires</h2>
                      <p>Buenos Aires será sede, entre el 30 de noviembre y el 1 de diciembre, de la próxima Cumbre de Líderes del G20.</p>
                      <p>El encuentro, que por primera vez se realizará en Sudamérica, reunirá a los principales jefes de Estado y Gobierno del mundo, y culminará el año de trabajo del G20 Argentina 2018.</p>
@@ -63,7 +162,7 @@
                <img src="img/buenos-aires/iconos.png" alt="Atractivos turísticos Buenos Aires">
             </div>      -->
          </section>
-         <div class="bsas-logo"></div>
+         
 
          <section class="parallax-container bsas-distancias">
             <div class="container">
@@ -195,13 +294,12 @@
       <script src="js/vendor/carousel-swipe.js"></script>
       <script src="js/vendor/jquery/jquery.waypoints.min.js"></script>
       <script src="js/vendor/jquery/jquery.counterup.min.js"></script>
-
-
-<script src="js/vendor/materialize.js"></script>
+      <script src="js/vendor/materialize.js"></script>
+      <script type="text/javascript" src="js/vendor/tooltipster/tooltipster.bundle.min.js"></script>
 
       <script src="js/script.js"></script>
       <script>
-      new WOW().init();
+         new WOW().init();
       </script>
    </body>
 </html>

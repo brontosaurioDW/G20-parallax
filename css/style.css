@@ -14,6 +14,7 @@ Site: G20;
  	* 2.5 - Headers
  	* 2.6 - Overlays
  * 3.0 - Buenos Aires
+ 	* 3.1 - Tooltips
  * 4.0 - Distancias
  * 5.0 - Destacados
  * 6.0 - Atributos
@@ -290,7 +291,6 @@ img{
 	color: #fff;
 }
 
-
 /*
 .bsas-iconos {
 	width: 43%;
@@ -299,6 +299,58 @@ img{
     bottom: 10%;
 }
 */
+
+#mapadesktop,
+	#mapadesktopmap {
+		display: block;
+	}
+
+	#mapamobile,
+	#mapamobilemap {
+		display: none;
+	}
+
+.bsas-ciudad .bsas-mapa img{
+	min-width: 445px;
+	margin: auto;
+}
+
+/* 3.1 Tooltips
+------------------------
+*/
+
+/* This is how you would create a custom secondary theme on top of tooltipster-noir: */
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-customized .tooltipster-box {
+	opacity:0.9;
+	background: #fff;
+	border: none;
+	border-radius: 0;
+	box-shadow: none;
+	width: 300px;
+	padding: 8px 15px;
+}
+
+.tooltipster-box h4 {
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #111;
+	font-weight: 700;
+}
+
+.tooltipster-box p {
+	font-size: 11px;
+	line-height: 12px;
+}
+
+.tooltipster-sidetip.tooltipster-shadow.tooltipster-shadow-customized .tooltipster-content {
+	color: #111;
+	padding: 8px;
+}
+
+.tooltip_templates { 
+	display: none; 
+}
 
 
 /* =====================
@@ -788,7 +840,12 @@ img{
 	/* Buenos Aires */
 
 	.bsas-ciudad .bsas-header {
-	    margin-top: 166px;
+	    margin-top: 180px;
+	    font-size: 30px;
+	}
+
+	.bsas-ciudad .bsas-dets {
+		padding-left: 100px;
 	}
 /*
 	.bsas-iconos {
@@ -842,7 +899,7 @@ img{
 	}
 
 	.bsas-ciudad .bsas-header {
-	    margin-top: 110px;
+	    margin-top: 35px;
 	    color: #fff;
 	}
 
@@ -1017,7 +1074,7 @@ img{
 	/* Buenos Aires */
 
 	.bsas-ciudad .bsas-header {
-	    margin-top: 100px;
+	    margin-top: 35px;
 	}
 /*
 	.bsas-iconos {
@@ -1139,7 +1196,8 @@ img{
 		/* Buenos Aires */
 
 	.bsas-ciudad .bsas-header {
-	    margin-top: 75px!important;
+	    margin-top: 30px!important;
+	    font-size: 30px!important;
 	}
 /*
 	.bsas-iconos {
@@ -1148,7 +1206,27 @@ img{
     	left: 5%;
 	}
 */
+	#mapadesktop,
+	#mapadesktopmap {
+		display: none;
+	}
 
+	#mapamobile,
+	#mapamobilemap {
+		display: block;
+	}
+
+	.bsas-ciudad .bsas-mapa img{
+		min-width: 280px;
+		margin: auto;
+	}
+
+
+	/*Distancias*/
+
+	.bsas-distancias {
+	    padding-top: 40px;
+	}
 
 	/*Destacados*/
 
