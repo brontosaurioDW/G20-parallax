@@ -291,14 +291,18 @@ img{
 	color: #fff;
 }
 
-/*
+
 .bsas-iconos {
-	width: 43%;
+	width: 640px;
     position: absolute;
-    left: 40%;
+    left: 35%;
     bottom: 10%;
 }
-*/
+
+.bsas-iconos-mobile {
+	display: none;
+}
+
 
 #mapadesktop,
 	#mapadesktopmap {
@@ -739,6 +743,24 @@ img{
     line-height: 13px;
 }
 
+.familypic .familypicinfo {
+	position: absolute;
+    bottom: 10%;
+    right: 0;
+    display: block;
+    width: auto;
+    margin: 0 10%;
+    padding: 15px;
+    background-color: #fff;
+    font-size: 15px;
+}
+
+.familypic .familypicinfo p span {
+	font-weight: 700;
+	color: #6CB0BE;
+
+}
+
 /* =====================
     12.0 Impacto Global
    ===================== */
@@ -847,11 +869,15 @@ img{
 	.bsas-ciudad .bsas-dets {
 		padding-left: 100px;
 	}
-/*
+
 	.bsas-iconos {
 	    bottom: 15%;
 	}
-*/
+
+	.bsas-iconos-mobile {
+		display: none;
+	}
+
 	/* Atributos */
 
 	.ba-atr-numeros {
@@ -899,7 +925,7 @@ img{
 	}
 
 	.bsas-ciudad .bsas-header {
-	    margin-top: 35px;
+	    margin-top: 100px;
 	    color: #fff;
 	}
 
@@ -910,13 +936,15 @@ img{
 	.bsas-ciudad .bsas-dets {
 		padding-bottom: 80px;
 	}
-/*
+
 	.bsas-iconos {
-		width: 55%;
-		left: 23%;
-		bottom: 18%;
+		width: 640px;
+	    position: absolute;
+	    left: 13%;
+    	bottom: 24%;
 	}
-*/
+
+
 
 	/* Atributos */
 
@@ -936,53 +964,53 @@ img{
 	}
 
 	.bsas-distancias {
-		background-image: url(../img/buenos-aires/backgrounds/bg-distancias.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-distancias.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-uno {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-uno.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-uno.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-dos {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-dos.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-dos.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-tres {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-tres.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-tres.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-cuatro {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cuatro.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-cuatro.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-cinco {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-cinco.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-cinco.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-seis {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-seis.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-seis.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-siete {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-siete.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-siete.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-ocho {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-ocho.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-ocho.jpg);
 	}
 
 	.bsas-atributos .bsas-atributos-nueve {
-		background-image: url(../img/buenos-aires/backgrounds/bg-atributos-nueve.jpg);
+		background-image: url(../img/buenos-aires/backgrounds/old/bg-atributos-nueve.jpg);
 	}
 
 
 
 	.cumbrelid {
-		background-image: url(../img/cumbre/backgrounds/bg-cumbre.jpg);
+		background-image: url(../img/cumbre/backgrounds/old/bg-cumbre.jpg);
 	}
 
 	.enarg {
-		background-image: url(../img/enarg/backgrounds/bg-enarg.jpg);
+		background-image: url(../img/enarg/backgrounds/old/bg-enarg.jpg);
 	}
 
 
@@ -1074,13 +1102,17 @@ img{
 	/* Buenos Aires */
 
 	.bsas-ciudad .bsas-header {
-	    margin-top: 35px;
+	    margin-top: 30px;
 	}
-/*
+
 	.bsas-iconos {
-		bottom: 33%;
+		display: none!important;
 	}
-*/
+
+	.bsas-iconos-mobile {
+		display: none!important;
+	}
+
 
 	/* Distancias */
 
@@ -1195,17 +1227,24 @@ img{
 
 		/* Buenos Aires */
 
+	.bsas-ciudad .bsas-dets {
+		padding: 20px 40px 80px 40px;
+	}
+
 	.bsas-ciudad .bsas-header {
-	    margin-top: 30px!important;
+	    margin-top: 10px!important;
 	    font-size: 30px!important;
 	}
-/*
-	.bsas-iconos {
-		width: 90%;
-		bottom: 23%!important;
-    	left: 5%;
+
+
+	.bsas-iconos-mobile {
+		display: block!important;
+		position: absolute;
+		bottom: 41%!important;
+    	left: 15%;
 	}
-*/
+
+
 	#mapadesktop,
 	#mapadesktopmap {
 		display: none;
@@ -1229,6 +1268,10 @@ img{
 	}
 
 	/*Destacados*/
+
+	.bsas-destacados-info {
+		padding: 40px 10px;
+	}
 
 	.bsas-destacados-img {
 		display: none;
@@ -1306,11 +1349,7 @@ img{
 		position: relative;
 	}
 
-
-
 }
-
-
 
 
 
